@@ -1,16 +1,18 @@
-package bijayshrestha.labtwo;
 
 /**
  * WAP using switch-case to tell the student’s division based on his/her marks.
  */
 
+package np.edu.scst.lab2;
+
+
 public class SwitchDivision {
 
-    public static String checkDivision(int result) {
-        if (result > 100) {
+    public static String checkDivision(int result, int noOfSub) {
+        if (result > 500) {
             return "Marks should be from 0 to 100";
         }
-        switch (result / 10) {
+        switch (result / (noOfSub*10)) {
             case 10:
             case 9:
             case 8:
@@ -28,7 +30,8 @@ public class SwitchDivision {
     }
 
     public static void main(String[] args) {
-        int result = 39;
-        System.out.println(checkDivision(result));
+        int result = 342, noOfSub = 5;
+        System.out.println("Your got " + result + " in " + noOfSub + " of subject.");
+        System.out.println("Your division is: " + checkDivision(result, noOfSub));
     }
 }
