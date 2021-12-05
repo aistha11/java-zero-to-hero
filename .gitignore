@@ -1,3 +1,9 @@
 /sagarmathaCsitJava2021/build/
 *.pdf
 *.docx
+/ServletFirstApplication/nbproject/private/
+/ServletFirstApplication/build/
+/WebApplication1/nbproject/private/
+/JavaFXApplicationHbox/nbproject/private/
+/JavaFXApplicationHbox/build/
+/JavaFXApplicationHbox/dist/
