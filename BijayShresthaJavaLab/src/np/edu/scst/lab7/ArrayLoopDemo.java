@@ -2,11 +2,6 @@
  WAP to print the list of characters array using for loop. Handle the possible exceptions that may arise
  */
 package np.edu.scst.lab7;
-
-/**
- *
- * @author Dell
- */
 public class ArrayLoopDemo {
 
     public static void main(String[] args) {

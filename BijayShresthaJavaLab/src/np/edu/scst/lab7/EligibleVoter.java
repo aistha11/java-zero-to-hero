@@ -1,9 +1,7 @@
 /*
  WAP to check whether a person is eligible to vote or not. If the person is not of age, throw an exception with the message “You cannot vote.”
-
  */
 package np.edu.scst.lab7;
-
 public class EligibleVoter {
 
     public static boolean checkVote(int age) {

@@ -3,16 +3,13 @@
     Each thread should individually print a loop containing its name and priority.
  */
 package np.edu.scst.lab8;
-
-
 public class RunnerInterface implements Runnable{
-
     @Override
     public void run() {
         RunnerInterface.print();
     }
     public static void print(){
-         for(int i =0; i<10; i++){
+         for(int i =0; i<5; i++){
             System.out.println("Name: "+Thread.currentThread().getName()+" Priority: "+Thread.currentThread().getPriority());
             try{Thread.sleep(1000); }catch(InterruptedException e){}
         }
@@ -25,13 +22,9 @@ public class RunnerInterface implements Runnable{
         t2.setPriority(7);
         Thread t3 = new Thread(m);
         t3.setPriority(8);
-        
         t1.start();
         t2.start();
         t3.start();
         RunnerInterface.print();
     }
-
-    
-    
 }

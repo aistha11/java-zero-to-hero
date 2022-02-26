@@ -2,13 +2,7 @@
  * Show a case of deadlock. Discuss on how it can be prevented?
  */
 package np.edu.scst.lab8;
-
-/**
- *
- * @author Dell
- */
 public class DeadlockDemo {
-
     public static void main(String[] args) {
         String room1 = "Room  402";
         String room2 = "Room 404";
@@ -31,7 +25,6 @@ public class DeadlockDemo {
                 }
             }
         };
-
         Thread dba = new Thread("DBA sir") {
             @Override
             public void run() {
@@ -51,9 +44,7 @@ public class DeadlockDemo {
                 }
             }
         };
-
         ajp.start();
         dba.start();
-
     }
 }

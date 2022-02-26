@@ -3,10 +3,6 @@
  */
 package np.edu.scst.lab7;
 
-/**
- *
- * @author Dell
- */
 public class DivisionDemo {
     public static void main(String[] args) {
         int x=15,y=0;
